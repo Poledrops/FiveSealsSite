@@ -9,6 +9,7 @@ Statik site; derleme adımı ve bağımlılık yok. `index.html` + `assets/` do�
 ```
 index.html            Tek sayfa: hero, önsöz, beş bölge, Taryan, oynanış, boss'lar, galeri, mobil, sonlar, indir
 gizlilik.html         Gizlilik ve Veri Koruma (KVKK aydınlatma metni + GDPR, çerez politikası, saklama ve imha)
+privacy.html          Aynı sayfanın İngilizce çevirisi (iki sayfa birlikte güncellenmeli; Türkçe metin esastır)
 404.html              GitHub Pages hata sayfası
 assets/css/main.css   Tüm stiller (renk ve tipografi değişkenleri :root içinde)
 assets/css/legal.css  Gizlilik sayfasına özel stiller (içindekiler, tablolar, yazdırma)

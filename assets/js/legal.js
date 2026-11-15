@@ -27,7 +27,8 @@
   const setMenu = (open) => {
     root.classList.toggle("nav-open", open);
     toggle.setAttribute("aria-expanded", String(open));
-    toggle.setAttribute("aria-label", open ? "Menüyü kapat" : "Menüyü aç");
+    const label = open ? (toggle.dataset.labelClose || "Menüyü kapat") : (toggle.dataset.labelOpen || "Menüyü aç");
+    toggle.setAttribute("aria-label", label);
   };
   toggle.addEventListener("click", () => setMenu(!root.classList.contains("nav-open")));
   links.addEventListener("click", (e) => { if (e.target.closest("a")) setMenu(false); });
