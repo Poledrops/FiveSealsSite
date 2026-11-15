@@ -41,8 +41,8 @@ Depo ayarlarında **Settings → Pages → Deploy from a branch → `main` / roo
 
 Site hiçbir üçüncü taraf kaynak yüklemez (yazı tipleri dahil), çerez veya tarayıcı depolaması kullanmaz;
 `gizlilik.html` bu duruma dayanır. Siteye analitik, gömülü içerik veya harici yazı tipi eklenirse gizlilik
-sayfasındaki çerez ve üçüncü taraf bölümleri de güncellenmelidir. `gizlilik.html` içindeki `.todo` ile işaretli
-alanlar (unvan, adres, e-posta) yayından önce doldurulmalıdır.
+sayfasındaki çerez ve üçüncü taraf bölümleri de güncellenmelidir. İçerik değiştiğinde sayfanın başındaki
+"Son güncelleme" tarihi ve sürüm numarası da güncellenmelidir.
 
 ## Ekran görüntüleri
 
