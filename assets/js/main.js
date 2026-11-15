@@ -5,7 +5,14 @@
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const shot = (name, w) => `assets/img/shots/${name}-${w}.webp`;
+  // each language has its own page and its own in-game screenshots (the game's UI text is localised)
+  const LANG = document.documentElement.lang === "en" ? "en" : "tr";
+  const SHOTS = document.documentElement.dataset.shots || "assets/img/shots";
+  const UI = {
+    tr: { menuOpen: "Menüyü aç", menuClose: "Menüyü kapat", region: "Bölge" },
+    en: { menuOpen: "Open menu", menuClose: "Close menu", region: "Region" },
+  }[LANG];
+  const shot = (name, w) => `${SHOTS}/${name}-${w}.webp`;
   const srcset = (name) => `${shot(name, 480)} 480w, ${shot(name, 960)} 960w, ${shot(name, 1600)} 1600w`;
 
   /* ------------------------------------------------------------------ loader */
@@ -44,7 +51,7 @@
   const setMenu = (open) => {
     document.documentElement.classList.toggle("nav-open", open);
     toggle.setAttribute("aria-expanded", String(open));
-    toggle.setAttribute("aria-label", open ? "Menüyü kapat" : "Menüyü aç");
+    toggle.setAttribute("aria-label", open ? UI.menuClose : UI.menuOpen);
   };
   toggle.addEventListener("click", () => setMenu(!document.documentElement.classList.contains("nav-open")));
   links.addEventListener("click", (e) => { if (e.target.closest("a")) setMenu(false); });
@@ -207,7 +214,44 @@
   }
 
   /* ------------------------------------------------------------------ the five seals */
-  const ZONES = [
+  const ZONES_EN = [
+    {
+      n: "I", color: "var(--z1)", region: "Crimson Cathedral", subtitle: "Kyrena's Crypt",
+      desc: "The cathedral where Taryan was baptised is now a roofless tomb. A ruined nave, a bell tower climb, an ambush hall and a stained-glass crossing lined with fire jets.",
+      boss: "Kyrena", bossTitle: "the Crimson Seraph", seal: "Seal of Blood", power: "Double Leap",
+      quote: "Come, lightning. Come to me one last time.", cite: "Kyrena",
+      shots: [["kyrena-sigil", "Kyrena's crimson sigil"], ["cathedral-nave", "The ruined nave"], ["cathedral-tower", "The bell tower"]],
+    },
+    {
+      n: "II", color: "var(--z2)", region: "Frozen Pass", subtitle: "Frostelle's Cold Calculation",
+      desc: "A pass where even time has frozen. Crevasses that demand a double jump, a cave of falling icicles, an ambush in the blizzard and a tower of ice.",
+      boss: "Frostelle", bossTitle: "the Ice Sorceress", seal: "Seal of Ice", power: "Storm Shield · parry",
+      quote: "Numbers do not lie. The seal was eating you from within.", cite: "Frostelle",
+      shots: [["frostelle-lotus", "Frostelle's ice lotus"], ["frozen-snowfield", "The snowfield"], ["frozen-ambush", "Blizzard ambush"]],
+    },
+    {
+      n: "III", color: "var(--z3)", region: "Holy Sanctuary", subtitle: "Sariel's Closed Gates",
+      desc: "A sanctuary, or a prison? An outer courtyard, gilded corridors, two-storey cell blocks and a deep elevator shaft.",
+      boss: "Sariel", bossTitle: "Seraph of the Sanctuary", seal: "Seal of the Sanctuary", power: "Golden Circuit · healing",
+      quote: "I did not lock the gates. Everyone inside chose to stay.", cite: "Sariel",
+      shots: [["sariel-beams", "Sariel's pillars of light"], ["sanctuary-courtyard", "The outer courtyard"], ["sanctuary-cells", "The cell blocks"]],
+    },
+    {
+      n: "IV", color: "var(--z4)", region: "Ivory Sun Temple", subtitle: "Aurelie's Searing Dawn",
+      desc: "A desert where even the stones burn. Crumbling bridges, an obelisk garden, a pyramid climb and an apocalypse waiting beyond the sun gate.",
+      boss: "Aurelie", bossTitle: "Priestess of the Sun", seal: "Seal of the Sun", power: "Resonance Theorem · ultimate",
+      quote: "The light is returning, Taryan. The light will burn you too.", cite: "Aurelie",
+      shots: [["aurelie-sunbeam", "Aurelie's sunbeam"], ["sun-pyramid", "The pyramid climb"], ["sun-ambush", "Courtyard ambush"]],
+    },
+    {
+      n: "V", color: "var(--z5)", region: "The Sealed Tower", subtitle: "Vorthin's Final Trial",
+      desc: "Where it all began. Floating shards, obsidian halls and walls that breathe. Your teacher is waiting at the summit.",
+      boss: "Vorthin", bossTitle: "the Archmage", seal: "Seal of the Void", power: "The final choice",
+      quote: "You came. Nine years... I have weighed everything, Taryan.", cite: "Vorthin",
+      shots: [["vorthin-void", "Vorthin's black hole"], ["tower-void", "Halls of the void"], ["tower-ambush", "Tower ambush"]],
+    },
+  ];
+  const ZONES_TR = [
     {
       n: "I", color: "var(--z1)", region: "Kızıl Katedral", subtitle: "Kyrena'nın Mezarlığı",
       desc: "Taryan'ın vaftiz edildiği katedral artık çatısız bir mezar. Yıkık nef, çan kulesi tırmanışı, pusu salonu ve alev jetleriyle kaplı vitray geçidi.",
@@ -244,6 +288,7 @@
       shots: [["vorthin-void", "Vorthin'in kara deliği"], ["tower-void", "Hiçliğin salonları"], ["tower-ambush", "Kule pususu"]],
     },
   ];
+  const ZONES = LANG === "en" ? ZONES_EN : ZONES_TR;
 
   const sealsSec = $(".seals");
   const stage = $("#seals");
@@ -279,7 +324,7 @@
   };
 
   const fill = (z) => {
-    $("#sealKicker").textContent = `${z.n} · Bölge`;
+    $("#sealKicker").textContent = `${z.n} · ${UI.region}`;
     $("#sealRegion").textContent = z.region;
     $("#sealSubtitle").textContent = z.subtitle;
     $("#sealDesc").textContent = z.desc;

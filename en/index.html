@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en" class="no-js" data-shots="../assets/img/shots-en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Five Seals — Dark fantasy action platformer for Android</title>
+  <meta name="description" content="Betrayed Storm Warden Taryan awakens nine years later. Five regions, five bosses, five seals and two endings. A dark fantasy 2D action platformer for Android.">
+  <meta name="theme-color" content="#050409">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://poledrops.github.io/FiveSealsSite/en/">
+  <link rel="alternate" hreflang="tr" href="https://poledrops.github.io/FiveSealsSite/">
+  <link rel="alternate" hreflang="en" href="https://poledrops.github.io/FiveSealsSite/en/">
+  <link rel="alternate" hreflang="x-default" href="https://poledrops.github.io/FiveSealsSite/en/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Five Seals">
+  <meta property="og:title" content="Five Seals">
+  <meta property="og:description" content="Five mages betrayed him. Nine years later, the lightning wakes once more. A dark fantasy action platformer for Android.">
+  <meta property="og:image" content="https://poledrops.github.io/FiveSealsSite/assets/img/og-en.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Five Seals">
+  <meta name="twitter:description" content="Five regions, five bosses, two endings. A dark fantasy action platformer for Android.">
+  <meta name="twitter:image" content="https://poledrops.github.io/FiveSealsSite/assets/img/og-en.jpg">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="../assets/img/icon-192.png">
+  <link rel="apple-touch-icon" href="../assets/img/icon-256.png">
+  <link rel="manifest" href="../site.webmanifest">
+
+  <link rel="preload" as="font" type="font/woff2" href="../assets/fonts/cinzel-normal-latin.woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/css/fonts.css">
+  <link rel="preload" as="image" href="../assets/img/art/hero-bg-1280.webp" imagesrcset="../assets/img/art/hero-bg-768.webp 768w, ../assets/img/art/hero-bg-1280.webp 1280w, ../assets/img/art/hero-bg-2048.webp 2048w" imagesizes="100vw">
+  <link rel="stylesheet" href="../assets/css/main.css">
+
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "Five Seals",
+    "alternateName": "Beş Mühür",
+    "description": "A dark fantasy 2D action platformer in which the betrayed Storm Warden Taryan crosses five regions to take back five seals.",
+    "genre": ["Action", "Platformer", "Dark Fantasy"],
+    "gamePlatform": "Android",
+    "operatingSystem": "Android 7.0+",
+    "applicationCategory": "Game",
+    "inLanguage": ["tr", "en", "de", "fr"],
+    "playMode": "SinglePlayer",
+    "url": "https://poledrops.github.io/FiveSealsSite/en/",
+    "image": "https://poledrops.github.io/FiveSealsSite/assets/img/og-en.jpg",
+    "author": { "@type": "Person", "name": "Murat Akpınar" },
+    "softwareVersion": "1.1.0"
+  }
+  </script>
+</head>
+<body class="is-loading">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- preloader: the five-seal sigil draws itself -->
+  <div class="loader" aria-hidden="true">
+    <svg class="loader__sigil" viewBox="0 0 200 200">
+      <circle class="ring" cx="100" cy="100" r="92"/>
+      <circle class="ring" cx="100" cy="100" r="80" style="animation-delay:.15s"/>
+      <path class="star" d="M100 22 L145.8 163.1 L25.8 75.9 L174.2 75.9 L54.2 163.1 Z"/>
+      <circle class="node" cx="100" cy="22" r="4" style="animation-delay:.9s"/>
+      <circle class="node" cx="174.2" cy="75.9" r="4" style="animation-delay:1s"/>
+      <circle class="node" cx="145.8" cy="163.1" r="4" style="animation-delay:1.1s"/>
+      <circle class="node" cx="54.2" cy="163.1" r="4" style="animation-delay:1.2s"/>
+      <circle class="node" cx="25.8" cy="75.9" r="4" style="animation-delay:1.3s"/>
+    </svg>
+    <div class="loader__label">BREAKING THE SEALS</div>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ================================================================ NAV -->
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a class="nav__brand" href="#top" aria-label="Five Seals — back to top">
+        <img src="../assets/img/icon-192.png" alt="" width="36" height="36">
+        <span>FIVE SEALS</span>
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Main menu">
+        <a href="#story">Story</a>
+        <a href="#regions">Regions</a>
+        <a href="#taryan">Taryan</a>
+        <a href="#gameplay">Gameplay</a>
+        <a href="#gallery-section">Gallery</a>
+        <a href="#endings">Endings</a>
+        <a class="btn nav__mcta" href="#download">Play Now</a>
+      </nav>
+      <nav class="lang-switch nav__lang" aria-label="Language">
+        <a href="../" hreflang="tr" lang="tr" title="Türkçe">TR</a>
+        <a href="./" hreflang="en" aria-current="page" title="English">EN</a>
+      </nav>
+      <a class="btn nav__cta" href="#download">Play Now</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ================================================================ HERO -->
+    <section class="hero" id="top" aria-label="Five Seals">
+      <div class="hero__bg" data-parallax="0.25">
+        <img src="../assets/img/art/hero-bg-1280.webp"
+             srcset="../assets/img/art/hero-bg-768.webp 768w, ../assets/img/art/hero-bg-1280.webp 1280w, ../assets/img/art/hero-bg-2048.webp 2048w"
+             sizes="110vw" width="2048" height="1152" alt="" fetchpriority="high">
+      </div>
+      <div class="hero__shade"></div>
+      <canvas class="hero__fx" id="heroFx" aria-hidden="true"></canvas>
+      <div class="hero__flash" id="heroFlash" aria-hidden="true"></div>
+
+      <div class="wrap">
+        <div class="hero__content">
+          <div class="hero__seal" aria-hidden="true">
+            <svg viewBox="0 0 400 400">
+              <g fill="none" stroke="#e9cd84" stroke-opacity=".5">
+                <circle cx="200" cy="200" r="196" stroke-opacity=".25"/>
+                <circle cx="200" cy="200" r="178" stroke-dasharray="2 10"/>
+                <circle cx="200" cy="200" r="150" stroke-opacity=".35"/>
+                <path d="M200 50 L288.2 321.4 L57.3 153.6 L342.7 153.6 L111.8 321.4 Z" stroke-opacity=".3"/>
+              </g>
+              <g fill="#e9cd84" fill-opacity=".8">
+                <circle cx="200" cy="50" r="3"/><circle cx="342.7" cy="153.6" r="3"/><circle cx="288.2" cy="321.4" r="3"/>
+                <circle cx="111.8" cy="321.4" r="3"/><circle cx="57.3" cy="153.6" r="3"/>
+              </g>
+            </svg>
+          </div>
+          <h1 class="sr-only">Five Seals</h1>
+          <img class="hero__logo reveal" src="../assets/img/art/logo-1048.webp" srcset="../assets/img/art/logo-600.webp 600w, ../assets/img/art/logo-1048.webp 1048w" sizes="(max-width: 700px) 92vw, 600px" width="1048" height="231" alt="Five Seals">
+          <p class="hero__subtext reveal" style="--d:.15s">From the Ashes of Betrayal</p>
+          <p class="hero__tag reveal" style="--d:.3s">Five mages betrayed him. Nine years later, on the cold stone of a burial chamber, the lightning woke once more.</p>
+          <div class="hero__ctas reveal" style="--d:.45s">
+            <a class="btn" href="#download">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></svg>
+              Play Now
+            </a>
+            <a class="btn btn--ghost" href="#story">Discover the Story</a>
+          </div>
+          <div class="hero__meta reveal" style="--d:.6s">
+            <span>Android</span><span>Action Platformer</span><span>4 Languages</span>
+          </div>
+        </div>
+      </div>
+      <a class="hero__scroll" href="#story" aria-label="Scroll down"><span>SCROLL</span><i></i></a>
+    </section>
+
+    <!-- ================================================================ PROLOGUE -->
+    <section class="section prologue" id="story">
+      <div class="prologue__bg" style="background-image:url('../assets/img/shots-en/intro-960.webp')" aria-hidden="true"></div>
+      <div class="wrap prologue__grid">
+        <div>
+          <span class="eyebrow reveal">Prologue</span>
+          <h2 class="h-section reveal" style="--d:.1s">Nine years ago,<br><em>the sky was torn open.</em></h2>
+          <ol class="prologue__lines">
+            <li class="reveal" style="--d:.1s">The Ancient Hunger devoured the kingdoms one by one. No sword could wound it. No spell could stop it.</li>
+            <li class="reveal" style="--d:.15s">Only five mages refused to retreat. Beside them fought the last Storm Warden of the Lightning Academy: <strong style="color:var(--storm);font-weight:600">Taryan</strong>.</li>
+            <li class="reveal" style="--d:.2s">At the summit of the Sealed Tower, the Hunger was sealed inside Taryan's body. The five mages held the five seals in their hands.</li>
+            <li class="strong reveal" style="--d:.25s">Then... <strong>they betrayed him.</strong></li>
+          </ol>
+        </div>
+        <div class="prologue__stack">
+          <figure class="frame reveal-img">
+            <img src="../assets/img/shots-en/memory-night-960.webp" srcset="../assets/img/shots-en/memory-night-480.webp 480w, ../assets/img/shots-en/memory-night-960.webp 960w, ../assets/img/shots-en/memory-night-1600.webp 1600w" sizes="(max-width: 960px) 92vw, 46vw" width="1600" height="900" loading="lazy" decoding="async" alt="Sepia memory scene: Taryan and Kyrena beside a brazier">
+            <figcaption><span>Memory · The Night Watch</span><span>I / IV</span></figcaption>
+          </figure>
+          <figure class="frame reveal-img" style="--d:.25s">
+            <img src="../assets/img/shots-en/finale-960.webp" srcset="../assets/img/shots-en/finale-480.webp 480w, ../assets/img/shots-en/finale-960.webp 960w" sizes="(max-width: 960px) 56vw, 28vw" width="1600" height="900" loading="lazy" decoding="async" alt="Finale: Taryan faces the Archmage Vorthin in the Sealed Tower">
+            <figcaption><span>Finale · The Sealed Tower</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================ FIVE SEALS / REGIONS -->
+    <section class="section seals" id="regions" aria-labelledby="sealsTitle">
+      <div class="wrap">
+        <div class="section__head center">
+          <span class="eyebrow both reveal">Five Regions · Five Seals</span>
+          <h2 class="h-section reveal" id="sealsTitle" style="--d:.1s">Every seal is the price of <em>a betrayal</em></h2>
+          <p class="lede reveal" style="--d:.2s">Each region has its own theme, enemies, traps, secret areas and boss arena. Take back the seal, earn its power, remember the truth.</p>
+        </div>
+
+        <div class="seals__stage reveal" id="seals">
+          <div class="seals__screen" id="sealScreen">
+            <div class="seals__numeral swap" id="sealNumeral">I</div>
+            <div class="seals__thumbs" id="sealThumbs" role="group" aria-label="Region screenshots"></div>
+          </div>
+          <div class="seals__info" aria-live="polite">
+            <div class="swap" id="sealText">
+              <span class="eyebrow" id="sealKicker">I · Region</span>
+              <h3 class="seals__region" id="sealRegion">Crimson Cathedral</h3>
+              <p class="seals__subtitle" id="sealSubtitle">Kyrena's Crypt</p>
+              <p class="seals__desc" id="sealDesc"></p>
+              <dl class="seals__boss">
+                <dt>Boss</dt><dd id="sealBoss"></dd>
+                <dt>Seal</dt><dd id="sealPower"></dd>
+              </dl>
+              <blockquote class="seals__quote">
+                <p id="sealQuote"></p>
+                <cite id="sealCite"></cite>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+
+        <div class="seals__ring" role="tablist" aria-label="Choose a region" id="sealRing">
+          <button class="seal-btn on" role="tab" aria-selected="true" style="--c:var(--z1)" data-i="0">
+            <span class="seal-btn__gem"><svg viewBox="0 0 76 76" aria-hidden="true"><circle class="ring" cx="38" cy="38" r="36"/><circle class="runes" cx="38" cy="38" r="30"/></svg><b>I</b></span>
+            <span class="seal-btn__name">Crimson Cathedral</span><span class="seal-btn__boss">Kyrena</span><span class="bar"></span>
+          </button>
+          <button class="seal-btn" role="tab" aria-selected="false" style="--c:var(--z2)" data-i="1">
+            <span class="seal-btn__gem"><svg viewBox="0 0 76 76" aria-hidden="true"><circle class="ring" cx="38" cy="38" r="36"/><circle class="runes" cx="38" cy="38" r="30"/></svg><b>II</b></span>
+            <span class="seal-btn__name">Frozen Pass</span><span class="seal-btn__boss">Frostelle</span><span class="bar"></span>
+          </button>
+          <button class="seal-btn" role="tab" aria-selected="false" style="--c:var(--z3)" data-i="2">
+            <span class="seal-btn__gem"><svg viewBox="0 0 76 76" aria-hidden="true"><circle class="ring" cx="38" cy="38" r="36"/><circle class="runes" cx="38" cy="38" r="30"/></svg><b>III</b></span>
+            <span class="seal-btn__name">Holy Sanctuary</span><span class="seal-btn__boss">Sariel</span><span class="bar"></span>
+          </button>
+          <button class="seal-btn" role="tab" aria-selected="false" style="--c:var(--z4)" data-i="3">
+            <span class="seal-btn__gem"><svg viewBox="0 0 76 76" aria-hidden="true"><circle class="ring" cx="38" cy="38" r="36"/><circle class="runes" cx="38" cy="38" r="30"/></svg><b>IV</b></span>
+            <span class="seal-btn__name">Sun Temple</span><span class="seal-btn__boss">Aurelie</span><span class="bar"></span>
+          </button>
+          <button class="seal-btn" role="tab" aria-selected="false" style="--c:var(--z5)" data-i="4">
+            <span class="seal-btn__gem"><svg viewBox="0 0 76 76" aria-hidden="true"><circle class="ring" cx="38" cy="38" r="36"/><circle class="runes" cx="38" cy="38" r="30"/></svg><b>V</b></span>
+            <span class="seal-btn__name">Sealed Tower</span><span class="seal-btn__boss">Vorthin</span><span class="bar"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================ MARQUEE -->
+    <div class="strip" aria-hidden="true">
+      <div class="strip__track">
+        <span>Five Regions</span><span>Five Bosses</span><span>Two Endings</span><span>15 Archive Notes</span><span>8 Enemy Types</span><span>Gamepad Support</span><span>Türkçe · English · Deutsch · Français</span>
+        <span>Five Regions</span><span>Five Bosses</span><span>Two Endings</span><span>15 Archive Notes</span><span>8 Enemy Types</span><span>Gamepad Support</span><span>Türkçe · English · Deutsch · Français</span>
+      </div>
+    </div>
+
+    <!-- ================================================================ TARYAN -->
+    <section class="section taryan" id="taryan" aria-labelledby="taryanTitle">
+      <div class="wrap taryan__grid">
+        <div class="taryan__art reveal">
+          <div class="taryan__halo" aria-hidden="true"></div>
+          <img src="../assets/img/art/taryan-640.webp" srcset="../assets/img/art/taryan-400.webp 400w, ../assets/img/art/taryan-640.webp 640w" sizes="(max-width: 960px) 70vw, 440px" width="640" height="960" loading="lazy" decoding="async" alt="Taryan: the white-haired Storm Warden in a gold and black robe, holding a lightning staff">
+        </div>
+        <div>
+          <span class="eyebrow reveal" style="--accent:var(--storm)">Storm Warden</span>
+          <h2 class="h-section reveal" id="taryanTitle" style="--d:.1s">Taryan, <em>the last Storm</em></h2>
+          <p class="lede reveal" style="--d:.2s">The last warden of the Lightning Academy. No sword; only a staff and the storm that roars within him. Every boss he defeats gives back a seal and a new power.</p>
+          <ul class="abilities">
+            <li class="ability reveal" style="--c:var(--gold-2)">
+              <span class="ability__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20 15 9"/><path d="m14 4 6 6"/><path d="M17 3l4 4-3 1-2-2z"/><path d="M3 15l2 2"/></svg></span>
+              <div><h3>Staff Shot</h3><p>Spark, spark, piercing charged orb: ranged lightning in a three-beat rhythm.</p></div>
+              <small>From the start</small>
+            </li>
+            <li class="ability reveal" style="--c:var(--violet-glow);--d:.05s">
+              <span class="ability__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h9"/><path d="M5 8h6"/><path d="M5 16h6"/><path d="M14 5l7 7-7 7"/></svg></span>
+              <div><h3>Dash</h3><p>Surge forward without taking damage, on the ground, in the air or mid-jump.</p></div>
+              <small>From the start</small>
+            </li>
+            <li class="ability reveal" style="--c:var(--z1);--d:.1s">
+              <span class="ability__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 14 6-6 6 6"/><path d="m6 20 6-6 6 6"/><path d="M12 2v2"/></svg></span>
+              <div><h3>Double Leap</h3><p>A second jump in mid-air, granted by the Seal of Blood.</p></div>
+              <small>Kyrena</small>
+            </li>
+            <li class="ability reveal" style="--c:var(--z2);--d:.15s">
+              <span class="ability__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6z"/><path d="m13 7-3 5h4l-3 5"/></svg></span>
+              <div><h3>Storm Shield</h3><p>Raise it at the right moment to turn projectiles back.</p></div>
+              <small>Frostelle</small>
+            </li>
+            <li class="ability reveal" style="--c:#5fe0a0;--d:.2s">
+              <span class="ability__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/><path d="M12 9v6M9 12h6"/></svg></span>
+              <div><h3>Golden Circuit</h3><p>Turn your mana into a circuit that closes your wounds.</p></div>
+              <small>Sariel</small>
+            </li>
+            <li class="ability reveal" style="--c:var(--z4);--d:.25s">
+              <span class="ability__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg></span>
+              <div><h3>Resonance Theorem</h3><p>Unite the voices of the seals into one devastating ultimate attack.</p></div>
+              <small>Aurelie</small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================ FEATURES -->
+    <section class="section features" id="gameplay" aria-labelledby="featTitle">
+      <div class="wrap">
+        <div class="section__head">
+          <span class="eyebrow reveal">Gameplay</span>
+          <h2 class="h-section reveal" id="featTitle" style="--d:.1s">Every jump <em>precise,</em><br>every fight a trial</h2>
+          <p class="lede reveal" style="--d:.2s">Tight platforming, multi-phase boss fights and secrets waiting to be found. All designed from the ground up for touch screens.</p>
+        </div>
+
+        <div class="features__grid">
+          <article class="feat feat--wide reveal">
+            <div class="feat__img"><img src="../assets/img/shots-en/frozen-ambush-960.webp" srcset="../assets/img/shots-en/frozen-ambush-960.webp 960w, ../assets/img/shots-en/frozen-ambush-1600.webp 1600w" sizes="(max-width: 680px) 92vw, 66vw" width="1600" height="900" loading="lazy" decoding="async" alt="Dashing between snow-covered platforms in the Frozen Pass"></div>
+            <span class="feat__k">Movement</span>
+            <h3>Pixel-perfect platforming</h3>
+            <p>Coyote time, jump buffering, apex hang time, corner correction and dash-jumps. When you fall, it is on you, never on the controls.</p>
+          </article>
+          <article class="feat reveal" style="--d:.1s">
+            <div class="feat__img"><img src="../assets/img/shots-en/kyrena-feathers-960.webp" srcset="../assets/img/shots-en/kyrena-feathers-480.webp 480w, ../assets/img/shots-en/kyrena-feathers-960.webp 960w" sizes="(max-width: 680px) 92vw, 33vw" width="1600" height="900" loading="lazy" decoding="async" alt="Kyrena's feather fan attack"></div>
+            <span class="feat__k">Combat</span>
+            <h3>Staff, rhythm and parry</h3>
+            <p>A three-beat lightning rhythm, downward shots to bounce off foes mid-air, a parry that reflects projectiles, hit-stop and screen shake.</p>
+          </article>
+
+          <article class="feat reveal">
+            <div class="feat__stat">8<small>AI TYPES</small></div>
+            <span class="feat__k">Enemies</span>
+            <h3>Eight kinds of enemy</h3>
+            <p>Chasers, bombers, shooters, lobbers, chargers, brutes, teleporting phantoms and shielded knights.</p>
+          </article>
+          <article class="feat reveal" style="--d:.1s">
+            <div class="feat__img"><img src="../assets/img/shots-en/vorthin-pentagram-960.webp" srcset="../assets/img/shots-en/vorthin-pentagram-480.webp 480w, ../assets/img/shots-en/vorthin-pentagram-960.webp 960w" sizes="(max-width: 680px) 92vw, 33vw" width="1600" height="900" loading="lazy" decoding="async" alt="Vorthin's pentagram spell"></div>
+            <span class="feat__k">Bosses</span>
+            <h3>Multi-phase battles</h3>
+            <p>Feather fans, ice lotuses, solar flares, black holes. Every boss has an attack set of its own.</p>
+          </article>
+          <article class="feat reveal" style="--d:.2s">
+            <div class="feat__img"><img src="../assets/img/shots-en/sun-desert-960.webp" srcset="../assets/img/shots-en/sun-desert-480.webp 480w, ../assets/img/shots-en/sun-desert-960.webp 960w" sizes="(max-width: 680px) 92vw, 33vw" width="1600" height="900" loading="lazy" decoding="async" alt="The desert road to the Ivory Sun Temple"></div>
+            <span class="feat__k">Exploration</span>
+            <h3>Secret areas and the archive</h3>
+            <p>Life Crystals, potions hidden across the map and 15 archive notes that reveal the mages' secrets.</p>
+          </article>
+
+          <article class="feat reveal">
+            <div class="feat__stat">4<small>LANGUAGES</small></div>
+            <span class="feat__k">Localisation</span>
+            <h3>Türkçe, English, Deutsch, Français</h3>
+            <p>Switch language instantly in game; every line of story, dialogue and interface is translated.</p>
+          </article>
+          <article class="feat feat--wide reveal" style="--d:.1s">
+            <div class="feat__img"><img src="../assets/img/shots-en/memory-gate-960.webp" srcset="../assets/img/shots-en/memory-gate-960.webp 960w, ../assets/img/shots-en/memory-gate-1600.webp 1600w" sizes="(max-width: 680px) 92vw, 66vw" width="1600" height="900" loading="lazy" decoding="async" alt="Sepia memory scene: Keeper of the Gate"></div>
+            <span class="feat__k">Story</span>
+            <h3>A cinematic tale of betrayal</h3>
+            <p>An intro cinematic, confrontations before every boss, sepia memories that return with each seal, and a final choice that leads to two different endings.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================ BOSSES -->
+    <section class="section bosses" id="bosses" aria-labelledby="bossTitle" style="padding-top:0">
+      <div class="wrap">
+        <div class="section__head center">
+          <span class="eyebrow both reveal">Five Mages</span>
+          <h2 class="h-section reveal" id="bossTitle" style="--d:.1s">Those who were once <em>your friends</em></h2>
+          <p class="lede reveal" style="--d:.2s">Each of them carries a seal. Each believes they had a reason to betray you.</p>
+        </div>
+        <div class="bosses__list">
+          <button class="boss reveal" style="--c:var(--z1)" data-lb="kyrena-sigil" data-caption="Kyrena, the Crimson Seraph · Crimson Cathedral">
+            <img src="../assets/img/shots-en/kyrena-sigil-960.webp" srcset="../assets/img/shots-en/kyrena-sigil-480.webp 480w, ../assets/img/shots-en/kyrena-sigil-960.webp 960w" sizes="(max-width: 1080px) 70vw, 20vw" width="1600" height="900" loading="lazy" decoding="async" alt="Kyrena's crimson seal attack" style="object-position:44% 50%">
+            <span class="boss__body"><span class="boss__n">I</span><h3>Kyrena</h3><span class="boss__title">The Crimson Seraph</span>
+              <span class="boss__seal" style="display:block">Seal of Blood · <b>Double Leap</b></span></span>
+          </button>
+          <button class="boss reveal" style="--c:var(--z2);--d:.08s" data-lb="frostelle-lotus" data-caption="Frostelle, the Ice Sorceress · Frozen Pass">
+            <img src="../assets/img/shots-en/frostelle-lotus-960.webp" srcset="../assets/img/shots-en/frostelle-lotus-480.webp 480w, ../assets/img/shots-en/frostelle-lotus-960.webp 960w" sizes="(max-width: 1080px) 70vw, 20vw" width="1600" height="900" loading="lazy" decoding="async" alt="Frostelle's ice lotus" style="object-position:50% 50%">
+            <span class="boss__body"><span class="boss__n">II</span><h3>Frostelle</h3><span class="boss__title">The Ice Sorceress</span>
+              <span class="boss__seal" style="display:block">Seal of Ice · <b>Storm Shield</b></span></span>
+          </button>
+          <button class="boss reveal" style="--c:var(--z3);--d:.16s" data-lb="sariel-beams" data-caption="Sariel, Seraph of the Sanctuary · Holy Sanctuary">
+            <img src="../assets/img/shots-en/sariel-beams-960.webp" srcset="../assets/img/shots-en/sariel-beams-480.webp 480w, ../assets/img/shots-en/sariel-beams-960.webp 960w" sizes="(max-width: 1080px) 70vw, 20vw" width="1600" height="900" loading="lazy" decoding="async" alt="Sariel's pillars of light" style="object-position:62% 50%">
+            <span class="boss__body"><span class="boss__n">III</span><h3>Sariel</h3><span class="boss__title">Seraph of the Sanctuary</span>
+              <span class="boss__seal" style="display:block">Seal of the Sanctuary · <b>Golden Circuit</b></span></span>
+          </button>
+          <button class="boss reveal" style="--c:var(--z4);--d:.24s" data-lb="aurelie-sunbeam" data-caption="Aurelie, Priestess of the Sun · Ivory Sun Temple">
+            <img src="../assets/img/shots-en/aurelie-sunbeam-960.webp" srcset="../assets/img/shots-en/aurelie-sunbeam-480.webp 480w, ../assets/img/shots-en/aurelie-sunbeam-960.webp 960w" sizes="(max-width: 1080px) 70vw, 20vw" width="1600" height="900" loading="lazy" decoding="async" alt="Aurelie's sunbeam" style="object-position:84% 50%">
+            <span class="boss__body"><span class="boss__n">IV</span><h3>Aurelie</h3><span class="boss__title">Priestess of the Sun</span>
+              <span class="boss__seal" style="display:block">Seal of the Sun · <b>Resonance Theorem</b></span></span>
+          </button>
+          <button class="boss reveal" style="--c:var(--z5);--d:.32s" data-lb="vorthin-void" data-caption="Vorthin, the Archmage · The Sealed Tower">
+            <img src="../assets/img/shots-en/vorthin-void-960.webp" srcset="../assets/img/shots-en/vorthin-void-480.webp 480w, ../assets/img/shots-en/vorthin-void-960.webp 960w" sizes="(max-width: 1080px) 70vw, 20vw" width="1600" height="900" loading="lazy" decoding="async" alt="Vorthin's black hole" style="object-position:38% 50%">
+            <span class="boss__body"><span class="boss__n">V</span><h3>Vorthin</h3><span class="boss__title">The Archmage · Your teacher</span>
+              <span class="boss__seal" style="display:block">Seal of the Void · <b>The Final Choice</b></span></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================ GALLERY -->
+    <section class="section gallery" id="gallery-section" aria-labelledby="galTitle" style="padding-top:0">
+      <div class="wrap">
+        <div class="section__head">
+          <span class="eyebrow reveal">Gallery</span>
+          <h2 class="h-section reveal" id="galTitle" style="--d:.1s"><em>Real</em> in-game shots</h2>
+          <p class="lede reveal" style="--d:.2s">Every image was captured in the engine, from the game itself. Tap a shot to enlarge it.</p>
+        </div>
+        <div class="gallery__grid" id="gallery">
+          <button class="shot w8 reveal-img" data-lb="cathedral-arena" data-caption="Crimson Cathedral · Kyrena's arena"><img src="../assets/img/shots-en/cathedral-arena-960.webp" srcset="../assets/img/shots-en/cathedral-arena-960.webp 960w, ../assets/img/shots-en/cathedral-arena-1600.webp 1600w" sizes="(max-width: 860px) 92vw, 66vw" width="1600" height="900" loading="lazy" decoding="async" alt="Kyrena's pillars of light in the Crimson Cathedral"></button>
+          <button class="shot w4r3 reveal-img" style="--d:.1s" data-lb="frostelle-pillars" data-caption="Frozen Pass · Frostelle's frost storm"><img src="../assets/img/shots-en/frostelle-pillars-960.webp" srcset="../assets/img/shots-en/frostelle-pillars-480.webp 480w, ../assets/img/shots-en/frostelle-pillars-960.webp 960w" sizes="(max-width: 860px) 46vw, 33vw" width="1600" height="900" loading="lazy" decoding="async" alt="Frostelle's frost storm attack" style="object-position:84% 50%"></button>
+          <button class="shot reveal-img" data-lb="frozen-snowfield" data-caption="Frozen Pass · The snowfield"><img src="../assets/img/shots-en/frozen-snowfield-960.webp" srcset="../assets/img/shots-en/frozen-snowfield-480.webp 480w, ../assets/img/shots-en/frozen-snowfield-960.webp 960w" sizes="(max-width: 860px) 46vw, 33vw" width="1600" height="900" loading="lazy" decoding="async" alt="The snowfield of the Frozen Pass"></button>
+          <button class="shot reveal-img" style="--d:.1s" data-lb="sanctuary-cells" data-caption="Holy Sanctuary · The cell blocks"><img src="../assets/img/shots-en/sanctuary-cells-960.webp" srcset="../assets/img/shots-en/sanctuary-cells-480.webp 480w, ../assets/img/shots-en/sanctuary-cells-960.webp 960w" sizes="(max-width: 860px) 46vw, 33vw" width="1600" height="900" loading="lazy" decoding="async" alt="The two-storey cell blocks of the Holy Sanctuary"></button>
+          <button class="shot reveal-img" style="--d:.2s" data-lb="seal-sanctuary" data-caption="Seal reclaimed · Golden Circuit"><img src="../assets/img/shots-en/seal-sanctuary-960.webp" srcset="../assets/img/shots-en/seal-sanctuary-480.webp 480w, ../assets/img/shots-en/seal-sanctuary-960.webp 960w" sizes="(max-width: 860px) 46vw, 33vw" width="1600" height="900" loading="lazy" decoding="async" alt="The Seal of the Sanctuary reclaimed"></button>
+          <button class="shot w6 reveal-img" data-lb="sun-pyramid" data-caption="Ivory Sun Temple · The pyramid climb"><img src="../assets/img/shots-en/sun-pyramid-960.webp" srcset="../assets/img/shots-en/sun-pyramid-960.webp 960w, ../assets/img/shots-en/sun-pyramid-1600.webp 1600w" sizes="(max-width: 860px) 46vw, 50vw" width="1600" height="900" loading="lazy" decoding="async" alt="The pyramid climb in the Sun Temple"></button>
+          <button class="shot w6 reveal-img" style="--d:.1s" data-lb="vorthin-eclipse" data-caption="The Sealed Tower · Vorthin's eclipse"><img src="../assets/img/shots-en/vorthin-eclipse-960.webp" srcset="../assets/img/shots-en/vorthin-eclipse-960.webp 960w, ../assets/img/shots-en/vorthin-eclipse-1600.webp 1600w" sizes="(max-width: 860px) 46vw, 50vw" width="1600" height="900" loading="lazy" decoding="async" alt="Vorthin's eclipse attack"></button>
+          <button class="shot reveal-img" data-lb="sun-ambush" data-caption="Courtyard ambush · Defeat them all"><img src="../assets/img/shots-en/sun-ambush-960.webp" srcset="../assets/img/shots-en/sun-ambush-480.webp 480w, ../assets/img/shots-en/sun-ambush-960.webp 960w" sizes="(max-width: 860px) 46vw, 33vw" width="1600" height="900" loading="lazy" decoding="async" alt="An ambush in the Sun Temple courtyard"></button>
+          <button class="shot reveal-img" style="--d:.1s" data-lb="tower-void" data-caption="The Sealed Tower · The void"><img src="../assets/img/shots-en/tower-void-960.webp" srcset="../assets/img/shots-en/tower-void-480.webp 480w, ../assets/img/shots-en/tower-void-960.webp 960w" sizes="(max-width: 860px) 46vw, 33vw" width="1600" height="900" loading="lazy" decoding="async" alt="The violet void of the Sealed Tower"></button>
+          <button class="shot reveal-img" style="--d:.2s" data-lb="cathedral-nave" data-caption="Crimson Cathedral · The ruined nave"><img src="../assets/img/shots-en/cathedral-nave-960.webp" srcset="../assets/img/shots-en/cathedral-nave-480.webp 480w, ../assets/img/shots-en/cathedral-nave-960.webp 960w" sizes="(max-width: 860px) 46vw, 33vw" width="1600" height="900" loading="lazy" decoding="async" alt="The ruined nave of the Crimson Cathedral"></button>
+          <button class="shot reveal-img" data-lb="memory-dawn" data-caption="Memory · The Dawn Oath"><img src="../assets/img/shots-en/memory-dawn-960.webp" srcset="../assets/img/shots-en/memory-dawn-480.webp 480w, ../assets/img/shots-en/memory-dawn-960.webp 960w" sizes="(max-width: 860px) 46vw, 33vw" width="1600" height="900" loading="lazy" decoding="async" alt="Sepia memory: The Dawn Oath"></button>
+          <button class="shot reveal-img" style="--d:.1s" data-lb="aurelie-flare" data-caption="Aurelie · Solar flare"><img src="../assets/img/shots-en/aurelie-flare-960.webp" srcset="../assets/img/shots-en/aurelie-flare-480.webp 480w, ../assets/img/shots-en/aurelie-flare-960.webp 960w" sizes="(max-width: 860px) 46vw, 33vw" width="1600" height="900" loading="lazy" decoding="async" alt="Aurelie's solar flare"></button>
+          <button class="shot reveal-img" style="--d:.2s" data-lb="menu" data-caption="Title screen"><img src="../assets/img/shots-en/menu-960.webp" srcset="../assets/img/shots-en/menu-480.webp 480w, ../assets/img/shots-en/menu-960.webp 960w" sizes="(max-width: 860px) 46vw, 33vw" width="1600" height="900" loading="lazy" decoding="async" alt="The Five Seals title screen"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================ MOBILE -->
+    <section class="section device" id="mobile" aria-labelledby="mobTitle" style="padding-top:0">
+      <div class="wrap device__grid">
+        <div class="reveal">
+          <div class="phone">
+            <div class="phone__screen">
+              <span class="phone__notch" aria-hidden="true"></span>
+              <img src="../assets/img/shots-en/touch-ui-960.webp" srcset="../assets/img/shots-en/touch-ui-960.webp 960w, ../assets/img/shots-en/touch-ui-1600.webp 1600w" sizes="(max-width: 960px) 92vw, 56vw" width="1600" height="900" loading="lazy" decoding="async" alt="Touch controls: runic joystick and staff, jump, dash, shield and healing orbs">
+              <span class="phone__glare" aria-hidden="true"></span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <span class="eyebrow reveal">Born for mobile</span>
+          <h2 class="h-section reveal" id="mobTitle" style="--d:.1s">A storm <em>under</em> your thumb</h2>
+          <p class="lede reveal" style="--d:.2s">A floating runic joystick and orbs in a fan layout. Slide from attack to jump, from jump to dash, without ever lifting your finger.</p>
+          <ul class="checks reveal" style="--d:.25s">
+            <li>Orbs scale to your screen's real DPI: the same physical size on a 6" phone and an 11" tablet</li>
+            <li>Notch and safe-area support, left-handed layout, adjustable button size and opacity</li>
+            <li>Bluetooth gamepad support</li>
+            <li>Three graphics quality levels chosen automatically per device, autosave when the app goes to the background</li>
+          </ul>
+          <dl class="specs reveal" style="--d:.3s">
+            <div><dt>Platform</dt><dd>Android 7.0+ phones and tablets</dd></div>
+            <div><dt>Genre</dt><dd>2D action platformer</dd></div>
+            <div><dt>Languages</dt><dd>TR · EN · DE · FR</dd></div>
+            <div><dt>Difficulty</dt><dd>Easy · Normal · Hard</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================ ENDINGS -->
+    <section class="endings" id="endings" aria-labelledby="endTitle">
+      <div class="endings__head">
+        <span class="eyebrow both reveal">Finale</span>
+        <h2 class="h-section reveal" id="endTitle" style="--d:.1s">“Now <em>choose.</em>”</h2>
+        <p class="lede reveal" style="--d:.2s;margin:0 auto">Five seals in your hands. The Hunger in your heart. The fate of the world in a single decision.</p>
+      </div>
+      <div class="endings__wrap">
+        <div class="endings__split">
+          <article class="ending ending--master">
+            <div class="ending__bg"><img src="../assets/img/shots-en/vorthin-eclipse-960.webp" srcset="../assets/img/shots-en/vorthin-eclipse-960.webp 960w, ../assets/img/shots-en/vorthin-eclipse-1600.webp 1600w" sizes="(max-width: 860px) 100vw, 50vw" width="1600" height="900" loading="lazy" decoding="async" alt="" style="object-position:70% 50%"></div>
+            <span class="ending__k reveal">The first path</span>
+            <h3 class="reveal" style="--d:.1s">Master of the Storm</h3>
+            <p class="reveal" style="--d:.2s">Hold the Hunger within and become its master: powerful forever... and alone.</p>
+          </article>
+          <article class="ending ending--sacrifice">
+            <div class="ending__bg"><img src="../assets/img/shots-en/sun-pyramid-960.webp" srcset="../assets/img/shots-en/sun-pyramid-960.webp 960w, ../assets/img/shots-en/sun-pyramid-1600.webp 1600w" sizes="(max-width: 860px) 100vw, 50vw" width="1600" height="900" loading="lazy" decoding="async" alt="" style="object-position:30% 50%"></div>
+            <span class="ending__k reveal">The second path</span>
+            <h3 class="reveal" style="--d:.1s">The Last Lightning</h3>
+            <p class="reveal" style="--d:.2s">Break the five seals. Vanish together with the Hunger. The world will never be devoured again.</p>
+          </article>
+        </div>
+        <div class="endings__choice" aria-hidden="true">
+          <svg viewBox="0 0 200 200"><g fill="none" stroke="#e9cd84"><circle cx="100" cy="100" r="96" stroke-opacity=".6"/><circle cx="100" cy="100" r="86" stroke-dasharray="2 7" stroke-opacity=".7"/><path d="M100 14 L181.8 100 L100 186 L18.2 100 Z" stroke-opacity=".35"/></g><circle cx="100" cy="100" r="74" fill="#07060c" fill-opacity=".85"/></svg>
+          <span>Two<br>Endings</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================ CTA -->
+    <section class="section cta" id="download" aria-labelledby="ctaTitle">
+      <div class="cta__bg"><img src="../assets/img/shots-en/cathedral-arena-960.webp" srcset="../assets/img/shots-en/cathedral-arena-960.webp 960w, ../assets/img/shots-en/cathedral-arena-1600.webp 1600w" sizes="100vw" width="1600" height="900" loading="lazy" decoding="async" alt=""></div>
+      <div class="wrap">
+        <img class="cta__icon reveal" src="../assets/img/icon-256.png" width="112" height="112" alt="Five Seals app icon" loading="lazy">
+        <span class="eyebrow both reveal" style="--d:.05s">The lightning wakes</span>
+        <h2 class="h-display reveal" id="ctaTitle" style="--d:.1s">Take back the seals.</h2>
+        <p class="lede reveal" style="--d:.2s;margin:0 auto">Five Seals is coming to Android phones and tablets. Five regions, five bosses and two endings await.</p>
+        <div class="cta__btns reveal" style="--d:.3s">
+          <a class="store" href="https://play.google.com/store/apps/details?id=com.cypnos.fiveseals&amp;hl=en" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M3.6 1.8 13.4 12l-9.8 10.2c-.4-.2-.6-.7-.6-1.2V3c0-.5.2-1 .6-1.2z"/><path fill="#FBBC04" d="m17 8.5-3.6 3.5L17 15.5l4-2.3c.9-.5.9-1.9 0-2.4z"/><path fill="#4285F4" d="M3.6 22.2 13.4 12l3.6 3.5L5.4 22c-.6.4-1.3.4-1.8.2z"/><path fill="#EA4335" d="M3.6 1.8c.5-.2 1.2-.2 1.8.2L17 8.5 13.4 12z"/></svg>
+            <span><small>GET IT ON</small><b>Google Play</b></span>
+          </a>
+        </div>
+        <p class="cta__note reveal" style="--d:.35s">Android 7.0 and up · Phones and tablets · Gamepad support · <a href="privacy.html" style="color:var(--ink-dim);border-bottom:1px solid var(--line)">Collects no personal data</a></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================================================================ FOOTER -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__top">
+        <img class="footer__logo" src="../assets/img/art/logo-600.webp" width="600" height="132" alt="Five Seals" loading="lazy">
+        <nav class="footer__nav" aria-label="Footer menu">
+          <a href="#story">Story</a><a href="#regions">Regions</a><a href="#taryan">Taryan</a>
+          <a href="#gameplay">Gameplay</a><a href="#gallery-section">Gallery</a><a href="#download">Download</a>
+          <a href="privacy.html">Privacy and Data Protection</a>
+        </nav>
+      </div>
+      <div class="footer__credits">
+        <span>© <span id="year">2026</span> Murat Akpınar. All rights reserved. · <a href="privacy.html">Privacy</a> · <a href="privacy.html#cookies">Cookies</a></span>
+        <span>Character art: elie automata · Effects <a href="https://github.com/patch-gg/pixelfx" target="_blank" rel="noopener">PixelFX</a> (MIT) · Made with <a href="https://godotengine.org" target="_blank" rel="noopener">Godot Engine</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" hidden>
+    <button class="lightbox__btn lightbox__close" id="lbClose" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <button class="lightbox__btn lightbox__prev" id="lbPrev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg></button>
+    <figure>
+      <img id="lbImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
+      <figcaption id="lbCap"></figcaption>
+    </figure>
+    <button class="lightbox__btn lightbox__next" id="lbNext" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button>
+  </div>
+
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

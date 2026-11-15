@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url><loc>https://poledrops.github.io/FiveSealsSite/</loc><lastmod>2026-11-15</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url>
+    <loc>https://poledrops.github.io/FiveSealsSite/</loc><lastmod>2026-11-15</lastmod><changefreq>monthly</changefreq><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://poledrops.github.io/FiveSealsSite/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poledrops.github.io/FiveSealsSite/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poledrops.github.io/FiveSealsSite/en/"/>
+  </url>
+  <url>
+    <loc>https://poledrops.github.io/FiveSealsSite/en/</loc><lastmod>2026-11-15</lastmod><changefreq>monthly</changefreq><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://poledrops.github.io/FiveSealsSite/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poledrops.github.io/FiveSealsSite/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poledrops.github.io/FiveSealsSite/en/"/>
+  </url>
   <url>
     <loc>https://poledrops.github.io/FiveSealsSite/gizlilik.html</loc><lastmod>2026-11-15</lastmod><changefreq>yearly</changefreq><priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://poledrops.github.io/FiveSealsSite/gizlilik.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://poledrops.github.io/FiveSealsSite/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poledrops.github.io/FiveSealsSite/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poledrops.github.io/FiveSealsSite/en/privacy.html"/>
   </url>
   <url>
-    <loc>https://poledrops.github.io/FiveSealsSite/privacy.html</loc><lastmod>2026-11-15</lastmod><changefreq>yearly</changefreq><priority>0.5</priority>
+    <loc>https://poledrops.github.io/FiveSealsSite/en/privacy.html</loc><lastmod>2026-11-15</lastmod><changefreq>yearly</changefreq><priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://poledrops.github.io/FiveSealsSite/gizlilik.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://poledrops.github.io/FiveSealsSite/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://poledrops.github.io/FiveSealsSite/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://poledrops.github.io/FiveSealsSite/en/privacy.html"/>
   </url>
 </urlset>

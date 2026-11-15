@@ -13,17 +13,6 @@
     radial-gradient(70% 90% at 15% 10%, rgba(123, 75, 214, .22), transparent 60%),
     linear-gradient(180deg, rgba(5, 4, 9, .55), var(--void-0));
 }
-.legal-top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 24px; }
-.lang-switch { display: inline-flex; border: 1px solid var(--line-strong); }
-.lang-switch a {
-  padding: 7px 14px; font-family: var(--f-display); font-size: 11px; letter-spacing: .2em; text-transform: uppercase;
-  color: var(--ink-dim); transition: background .3s, color .3s;
-}
-.lang-switch a + a { border-left: 1px solid var(--line-strong); }
-.lang-switch a:hover { color: var(--gold-3); }
-.lang-switch a[aria-current="page"] { background: rgba(233, 205, 132, .14); color: var(--gold-3); }
-@media print { .lang-switch { display: none; } }
-
 .legal-hero h1 {
   font-family: var(--f-display); font-weight: 600; line-height: 1.05; letter-spacing: .01em;
   font-size: clamp(34px, 5.4vw, 72px); margin: .35em 0 .3em;
