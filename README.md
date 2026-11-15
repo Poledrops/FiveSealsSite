@@ -51,5 +51,5 @@ Kareler oyunun kendi debug araçlarıyla (Godot 4.7, `--shots`, `--bot=boss|run`
 
 ## Lisanslar
 
-© 2026 Poledrops. Karakter, boss ve düşman sanatı **elie automata** paketlerinden; efektler [PixelFX](https://github.com/patch-gg/pixelfx) (MIT);
+© 2026 Murat Akpınar. Karakter, boss ve düşman sanatı **elie automata** paketlerinden; efektler [PixelFX](https://github.com/patch-gg/pixelfx) (MIT);
 oyun [Godot Engine](https://godotengine.org) (MIT) ile yapıldı.
